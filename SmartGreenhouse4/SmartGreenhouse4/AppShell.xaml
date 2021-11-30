@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Shell xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:pages="clr-namespace:SmartGreenhouse4"
+             x:Class="SmartGreenhouse4.AppShell"
+             x:Name="shell"
+             BackgroundColor="DarkGray"
+       >
+
+    <Shell.FlyoutBackgroundImage>background.png</Shell.FlyoutBackgroundImage>
+    <Shell.FlyoutBackgroundImageAspect>Fill</Shell.FlyoutBackgroundImageAspect>
+
+    <Shell.Title>A</Shell.Title>
+    <Shell.TitleColor>White</Shell.TitleColor>
+
+    <Shell.ItemTemplate>
+        <DataTemplate>
+            <Grid ColumnDefinitions="0.2*,0.8*" Padding="0, 0, 0, 15">
+                <Image Source="{Binding FlyoutIcon}"
+                       Margin="5"
+                       HeightRequest="30" />
+                <Label Grid.Column="1"
+                       Text="{Binding Title}"
+                       TextColor="White"
+                       FontSize="19"
+                       VerticalTextAlignment="Center" />
+            </Grid>
+        </DataTemplate>
+    </Shell.ItemTemplate>
+
+    <Shell.FlyoutHeader>
+        <Label Text="Александр" Padding="20, 20, 0, 0" FontSize="25"/>
+    </Shell.FlyoutHeader>
+
+    <Shell.FlyoutFooter>
+        <AbsoluteLayout Padding="20">
+            <Label Text="Выход из аккаунта" FontSize="20" AbsoluteLayout.LayoutBounds="0.5, 0.5, AutoSize, AutoSize" AbsoluteLayout.LayoutFlags="PositionProportional"/>
+            <Button Text="Выход из аккаунта" AbsoluteLayout.LayoutBounds="0.5, 0.5, AutoSize, AutoSize" AbsoluteLayout.LayoutFlags="PositionProportional" Opacity="0" Clicked="OnLogout"></Button>
+        </AbsoluteLayout>
+    </Shell.FlyoutFooter>
+
+    <ShellContent Route="loading"
+         ContentTemplate="{DataTemplate pages:LoadingPage}">
+    </ShellContent>
+    
+    <FlyoutItem Route="main" Title="Управление Теплицами" Icon="greenhouse_icon.png">
+        <ShellContent ContentTemplate="{DataTemplate pages:PageGreenhouses}" IsTabStop="False" Title="Управление Теплицами"/>
+    </FlyoutItem>
+    <FlyoutItem Title="Настройки" Icon="icon_settings.png">
+        <ShellContent ContentTemplate="{DataTemplate pages:SettingsPage}"/>
+    </FlyoutItem>
+    <FlyoutItem Title="Помощь" Icon="icon_help.png">
+        <ShellContent ContentTemplate="{DataTemplate pages:HelpPage}"/>
+    </FlyoutItem>
+
+
+    <ShellContent Route="login"
+         ContentTemplate="{DataTemplate pages:LoginPage}">
+    </ShellContent>
+
+</Shell>

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SmartGreenhouse4.PageGreenhouses"
+             Title="Управление теплицами"
+             BackgroundImageSource="background.png">
+    <ContentPage.Content>
+        <AbsoluteLayout>
+            <CollectionView x:Name="list" AbsoluteLayout.LayoutBounds="0, 0, 1, 0.9" AbsoluteLayout.LayoutFlags="All" >
+                
+            </CollectionView>
+            <Button Text="Добавить Теплицу" Background="Gray" TextColor="White" AbsoluteLayout.LayoutBounds="0, 1, 1, 0.1" AbsoluteLayout.LayoutFlags="All"/>
+        </AbsoluteLayout>
+    </ContentPage.Content>
+</ContentPage>
