@@ -29,7 +29,7 @@
     </Shell.ItemTemplate>
 
     <Shell.FlyoutHeader>
-        <Label Text="Александр" Padding="20, 20, 0, 0" FontSize="25"/>
+        <Label x:Name="login"  Text="" Padding="20, 20, 0, 0" FontSize="25"/>
     </Shell.FlyoutHeader>
 
     <Shell.FlyoutFooter>

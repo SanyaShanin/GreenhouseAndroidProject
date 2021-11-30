@@ -9,6 +9,7 @@ using Xamarin.Forms.Xaml;
 using System.Windows.Input;
 
 using SmartGreenhouse4.Apis.Interfrface;
+using SmartGreenhouse4.Apis.Models;
 
 namespace SmartGreenhouse4
 {
@@ -20,6 +21,7 @@ namespace SmartGreenhouse4
         {
             Instance = this;
             InitializeComponent();
+            App.onLogin += UpdateUser;
         }
 
         public async void OnLogout(object sender, EventArgs e)
@@ -29,6 +31,10 @@ namespace SmartGreenhouse4
             await Application.Current.SavePropertiesAsync();
             await AppShell.Current.Navigation.PushModalAsync(new LoginPage());
             Shell.Current.FlyoutIsPresented = false;
+        }
+        public void UpdateUser(User user)
+        {
+            login.Text = user.name;
         }
     }
 }

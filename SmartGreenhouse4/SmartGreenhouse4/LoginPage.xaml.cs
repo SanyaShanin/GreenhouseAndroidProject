@@ -42,7 +42,7 @@ namespace SmartGreenhouse4
             await Application.Current.SavePropertiesAsync();
 
             var user = User.FromJSON(result.content);
-            App.loggedUser = user;
+            App.SetUser(user);
 
             return true;
         }

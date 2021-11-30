@@ -7,11 +7,11 @@ namespace SmartGreenhouse4.Apis.Models
 {
     public class User
     {
-        string name = "";
-        string login = "";
-        string mail = "";
-        string status = "";
-        string[] greenhouses;
+        public string name = "";
+        public string login = "";
+        public string mail = "";
+        public string status = "";
+        public string[] greenhouses;
         public User()
         {
 
