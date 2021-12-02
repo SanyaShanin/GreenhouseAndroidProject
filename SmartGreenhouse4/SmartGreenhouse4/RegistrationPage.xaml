@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SmartGreenhouse4.RegistrationPage"
+             BackgroundImageSource="background.png">
+
+    <AbsoluteLayout>
+        <StackLayout AbsoluteLayout.LayoutBounds="0, 0, 1, 1" AbsoluteLayout.LayoutFlags="SizeProportional">
+
+            <Label Text="Регистрация" HorizontalTextAlignment="Center" FontSize="36" Padding="0, 30, 0, 10"/>
+            <StackLayout VerticalOptions="CenterAndExpand" Padding="30, 0, 30, 100">
+                <Entry x:Name="login" Placeholder="Логин"></Entry>
+                <Entry x:Name="name" Placeholder="Имя"></Entry>
+                <Entry x:Name="password" Placeholder="Пароль" IsPassword="True"></Entry>
+                <Entry x:Name="rpassword" Placeholder="Повторите Пароль" IsPassword="True"></Entry>
+                <AbsoluteLayout>
+                    <Label Text="Подтвердить" FontSize="25" HorizontalOptions="Center" VerticalOptions="Center" AbsoluteLayout.LayoutBounds="0, 0, 1, 70" AbsoluteLayout.LayoutFlags="WidthProportional"/>
+                    <Button x:Name="btnLogin" Text="Подтвердить" FontSize="20" HeightRequest="65" Clicked="OnAccept" Opacity="0" AbsoluteLayout.LayoutBounds="0, 0, 1, AutoSize" AbsoluteLayout.LayoutFlags="WidthProportional"></Button>
+                </AbsoluteLayout>
+            </StackLayout>
+            <AbsoluteLayout Padding="0, 0, 0, 50">
+                <Label Text="Назад" FontSize="20" HorizontalOptions="Center" VerticalOptions="Center" AbsoluteLayout.LayoutBounds="0, 0, 1, 1" AbsoluteLayout.LayoutFlags="SizeProportional"/>
+                <Button x:Name="btnBack" Text="Назад" FontSize="20" HeightRequest="65" Clicked="OnBack" Opacity="0" AbsoluteLayout.LayoutBounds="0, 0, 1, 1" AbsoluteLayout.LayoutFlags="SizeProportional"></Button>
+            </AbsoluteLayout>
+        </StackLayout>
+        <ActivityIndicator x:Name="loading" AbsoluteLayout.LayoutBounds="0.5, 0.5, AutoSize, AutoSize" AbsoluteLayout.LayoutFlags="PositionProportional"></ActivityIndicator>
+    </AbsoluteLayout>
+</ContentPage>

@@ -18,3 +18,6 @@ C:\Users\Cats\source\repos\SmartGreenhouse4\SmartGreenhouse4\SmartGreenhouse4\ob
 C:\Users\Cats\source\repos\SmartGreenhouse4\SmartGreenhouse4\SmartGreenhouse4\obj\Debug\netstandard2.0\SettingsPage.xaml.g.cs
 C:\Users\Cats\source\repos\SmartGreenhouse4\SmartGreenhouse4\SmartGreenhouse4\obj\Debug\netstandard2.0\LoadingPage.xaml.g.cs
 C:\Users\Cats\source\repos\SmartGreenhouse4\SmartGreenhouse4\SmartGreenhouse4\obj\Debug\netstandard2.0\PageGreenhouses.xaml.g.cs
+C:\Users\Cats\source\repos\SmartGreenhouse4\SmartGreenhouse4\SmartGreenhouse4\obj\Debug\netstandard2.0\AddGreenhousePage.xaml.g.cs
+C:\Users\Cats\source\repos\SmartGreenhouse4\SmartGreenhouse4\SmartGreenhouse4\obj\Debug\netstandard2.0\GreenhouseControlPage.xaml.g.cs
+C:\Users\Cats\source\repos\SmartGreenhouse4\SmartGreenhouse4\SmartGreenhouse4\obj\Debug\netstandard2.0\RegistrationPage.xaml.g.cs

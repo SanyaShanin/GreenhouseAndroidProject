@@ -1,15 +1,29 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:constants="clr-namespace:SmartGreenhouse4;assembly=SmartGreenhouse4"
              x:Class="SmartGreenhouse4.PageGreenhouses"
              Title="Управление теплицами"
-             BackgroundImageSource="background.png">
+             BackgroundImageSource="background.png"
+             x:Name="GreenhousesPage">
     <ContentPage.Content>
         <AbsoluteLayout>
-            <CollectionView x:Name="list" AbsoluteLayout.LayoutBounds="0, 0, 1, 0.9" AbsoluteLayout.LayoutFlags="All" >
-                
-            </CollectionView>
-            <Button Text="Добавить Теплицу" Background="Gray" TextColor="White" AbsoluteLayout.LayoutBounds="0, 1, 1, 0.1" AbsoluteLayout.LayoutFlags="All"/>
+            <ListView x:Name="list" AbsoluteLayout.LayoutBounds="0, 0, 1, 0.9" AbsoluteLayout.LayoutFlags="All" RowHeight="150" HasUnevenRows="True" SelectionMode="None" IsPullToRefreshEnabled="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell Height="100">
+                            <StackLayout BackgroundColor="#20000000">
+                                <StackLayout Orientation="Horizontal">
+                                    <Image Source="greenhouse_icon.png" Aspect="AspectFit" HeightRequest="80" Margin="6"></Image>
+                                    <Label Text="{Binding name}" VerticalOptions="Center" FontSize="20"/>
+                                </StackLayout>
+                                <BoxView BackgroundColor="White" HeightRequest="1" HorizontalOptions="Fill" VerticalOptions="End"></BoxView>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <Button Text="Добавить Теплицу" Background="Gray" TextColor="White" Clicked="OnAddGreenhouse"  AbsoluteLayout.LayoutBounds="0, 1, 1, 0.1" AbsoluteLayout.LayoutFlags="All"/>
         </AbsoluteLayout>
     </ContentPage.Content>
 </ContentPage>

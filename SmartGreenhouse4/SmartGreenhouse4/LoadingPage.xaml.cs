@@ -60,6 +60,7 @@ namespace SmartGreenhouse4
 
             var user = User.FromJSON(result.content);
             App.SetUser(user);
+            App.session = session;
 
             return true;
         }

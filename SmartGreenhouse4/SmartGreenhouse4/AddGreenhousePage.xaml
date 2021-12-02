@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SmartGreenhouse4.AddGreenhousePage"
+             BackgroundImageSource="background.png"
+             Title="Добавление теплицы">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="Center" Margin="15">
+            <Entry x:Name="id" Placeholder="Идентификатор" VerticalOptions="Center" Margin="0, 0, 0, 15"></Entry>
+            <Button Text="Добавить" VerticalOptions="Center" Clicked="OnAddGreenhouse"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

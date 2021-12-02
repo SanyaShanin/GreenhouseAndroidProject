@@ -47,6 +47,10 @@ namespace SmartGreenhouse4.Apis
                 return new Result(error, false);
             }
         }
+        public static async Task<Result> Register(string login, string name, string password, Action<String> onSuccess = null, Action<String> onFailure = null)
+        {
+            return await SendRequest("register?login=" + login + "&password=" + password + "&name=" + name, onSuccess, onFailure);
+        }
         public static async Task<Result> Login(string login, string password, Action<String> onSuccess = null, Action<String> onFailure = null)
         {
             return await SendRequest("login?login=" + login + "&password=" + password, onSuccess, onFailure);
@@ -54,6 +58,14 @@ namespace SmartGreenhouse4.Apis
         public static async Task<Result> GetUser(string session, Action<String> onSuccess = null, Action<String> onFailure = null)
         {
             return await SendRequest("user/" + session, onSuccess, onFailure);
+        }
+        public static async Task<Result> UserAddGreenhouse(string session, string gh_id, Action<String> onSuccess = null, Action<String> onFailure = null)
+        {
+            return await SendRequest("user/" + session + "/add_greenhouse?greenhouse=" + gh_id, onSuccess, onFailure);
+        }
+        public static async Task<Result> GetGreenhouse(string session, string id, Action<String> onSuccess = null, Action<String> onFailure = null)
+        {
+            return await SendRequest("greenhouse/" + id + "?session=" + session, onSuccess, onFailure);
         }
     }
 }

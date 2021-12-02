@@ -57,5 +57,11 @@
     <ShellContent Route="login"
          ContentTemplate="{DataTemplate pages:LoginPage}">
     </ShellContent>
+    <ShellContent Route="add_greenhouse"
+         ContentTemplate="{DataTemplate pages:AddGreenhousePage}">
+    </ShellContent>
+    <ShellContent Route="greenhouse"
+         ContentTemplate="{DataTemplate pages:GreenhouseControlPage}">
+    </ShellContent>
 
 </Shell>

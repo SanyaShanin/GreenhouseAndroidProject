@@ -584,6 +584,6 @@ C:\Users\Cats\source\repos\SmartGreenhouse4\SmartGreenhouse4\SmartGreenhouse4.An
 C:\Users\Cats\source\repos\SmartGreenhouse4\SmartGreenhouse4\SmartGreenhouse4.Android\obj\Debug\110\android\src\crc64a79c49427667a0d0\MainApplication.java
 C:\Users\Cats\source\repos\SmartGreenhouse4\SmartGreenhouse4\SmartGreenhouse4.Android\obj\Debug\110\res\drawable\greenhouse_icon.png
 C:\Users\Cats\source\repos\SmartGreenhouse4\SmartGreenhouse4\SmartGreenhouse4.Android\obj\Debug\110\res\drawable\background.png
-C:\Users\Cats\source\repos\SmartGreenhouse4\SmartGreenhouse4\SmartGreenhouse4.Android\obj\Debug\110\SmartGreenhouse4.Android.csproj.CopyComplete
 C:\Users\Cats\source\repos\SmartGreenhouse4\SmartGreenhouse4\SmartGreenhouse4.Android\obj\Debug\110\res\drawable\icon_settings.png
 C:\Users\Cats\source\repos\SmartGreenhouse4\SmartGreenhouse4\SmartGreenhouse4.Android\obj\Debug\110\res\drawable\icon_help.png
+C:\Users\Cats\source\repos\SmartGreenhouse4\SmartGreenhouse4\SmartGreenhouse4.Android\obj\Debug\110\SmartGreenhouse4.Android.csproj.CopyComplete

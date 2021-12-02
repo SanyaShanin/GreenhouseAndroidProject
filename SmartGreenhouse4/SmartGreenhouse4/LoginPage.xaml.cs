@@ -43,6 +43,7 @@ namespace SmartGreenhouse4
 
             var user = User.FromJSON(result.content);
             App.SetUser(user);
+            App.session = session;
 
             return true;
         }
@@ -66,7 +67,10 @@ namespace SmartGreenhouse4
 
             await AppShell.Current.GoToAsync("///main");
         }
-
+        private async void OnRegister(object sender, EventArgs e)
+        {
+            await Shell.Current.Navigation.PushModalAsync(new RegistrationPage());
+        }
         protected override bool OnBackButtonPressed()
         {
             return true;

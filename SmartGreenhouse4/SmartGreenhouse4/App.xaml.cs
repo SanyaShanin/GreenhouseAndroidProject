@@ -8,8 +8,10 @@ namespace SmartGreenhouse4
     public partial class App : Application
     {
         public static User loggedUser;
+        public static string session = "";
         public delegate void OnLogin(User user);
         public static OnLogin onLogin;
+        public static Greenhouse CurrentGreenhouse;
         public App()
         {
             InitializeComponent();
